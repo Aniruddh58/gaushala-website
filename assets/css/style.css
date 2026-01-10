@@ -1,7 +1,7 @@
 /* =========================================================
    Shree Ramkrishna Gau Raksha Sewa Samiti
    FINAL GLOBAL STYLESHEET
-   Desktop + Mobile LOCKED
+   ONE NAV SYSTEM | MOBILE SAFE | DESKTOP SAFE
    ========================================================= */
 
 /* ---------- VARIABLES ---------- */
@@ -64,23 +64,13 @@ a {
   padding: 64px 0;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-title h2 {
-  font-size: 2.2rem;
-  color: var(--secondary-red);
-}
-
 /* ---------- HEADER ---------- */
 .site-header {
   background: #fff;
   border-bottom: 2px solid var(--primary-saffron);
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
 }
 
 .header-inner {
@@ -124,6 +114,22 @@ a {
   color: var(--text-muted);
 }
 
+/* ---------- HAMBURGER ---------- */
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- NAV GROUP ---------- */
+.nav-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 /* ---------- NAV ---------- */
 .site-nav {
   display: flex;
@@ -147,14 +153,63 @@ a {
   background: #fff;
 }
 
-/* ---------- HAMBURGER ---------- */
-.menu-toggle {
-  display: none;
-  font-size: 1.7rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1001;
+/* =========================================================
+   MOBILE NAVIGATION (ONLY SYSTEM USED)
+   ========================================================= */
+@media (max-width: 768px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+    align-self: flex-end;
+    margin-top: 6px;
+  }
+
+  /* Collapse nav group */
+  .nav-group {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Expand when active */
+  .nav-group.active {
+    max-height: 600px;
+  }
+
+  .site-nav {
+    flex-direction: column;
+  }
+
+  .site-nav a {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .lang-select {
+    margin: 12px 16px;
+  }
+}
+
+/* =========================================================
+   DESKTOP SAFETY
+   ========================================================= */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-group {
+    max-height: none !important;
+    flex-direction: row;
+  }
 }
 
 /* ---------- HERO ---------- */
@@ -168,246 +223,19 @@ a {
   color: #fff;
 }
 
-.hero-inner {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.hero-content p {
-  color: rgba(255,255,255,0.9);
-}
-
-/* ---------- BUTTONS ---------- */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.btn-primary {
-  background: var(--primary-saffron);
-  color: #000;
-}
-
-.btn-outline {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-/* ---------- CARDS ---------- */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: var(--shadow-soft);
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 20px;
-}
-
-.card-body h3 {
-  color: var(--secondary-red);
-}
-
-/* ---------- FOOTER ---------- */
-.site-footer {
-  background: #111;
-  color: #ddd;
-}
-
-.footer-inner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
-  padding: 50px 0;
-}
-
-/* ---------- FLOATING BUTTONS ---------- */
-.fab {
-  position: fixed;
-  z-index: 999;
-}
-
-.fab.whatsapp {
-  bottom: 16px;
-  right: 16px;
-  background: #25D366;
-}
-
-.fab.call {
-  bottom: 16px;
-  right: 80px;
-  background: var(--secondary-red);
-}
-
-.fab a {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.3rem;
-  box-shadow: var(--shadow-soft);
-}
-
-/* =========================================================
-   MOBILE ONLY (FINAL & LOCKED)
-   ========================================================= */
-@media (max-width: 768px) {
-
-  /* Header stack */
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  /* Show hamburger */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Hide nav by default */
-  .site-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #fff;
-    border-top: 1px solid var(--border-light);
-  }
-
-  .site-nav a {
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border-light);
-  }
-
-  /* Show nav when active */
-  .site-nav.active {
-    display: flex;
-  }
-
-  /* Hero mobile */
-  .hero {
-    text-align: center;
-  }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .section {
-    padding: 32px 0;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* =========================================================
-   DESKTOP SAFETY (FORCE NAV VISIBILITY)
-   ========================================================= */
-@media (min-width: 769px) {
-  .site-nav {
-    display: flex !important;
-  }
-  .menu-toggle {
-    display: none !important;
-  }
-}
-/* ---------- YOUTUBE SECTION ---------- */
+/* ---------- YOUTUBE ---------- */
 .youtube-wrapper {
   position: relative;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 56.25%; /* 16:9 */
+  padding-top: 56.25%;
 }
 
 .youtube-wrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   border-radius: 12px;
-}
-
-.youtube-cta {
-  text-align: center;
-  margin-top: 24px;
-}
-/* =========================================================
-   FINAL TOUCH FIX (MOBILE + TABLET)
-   ========================================================= */
-
-/* Ensure header allows interaction */
-.site-header,
-.header-inner {
-  overflow: visible !important;
-}
-
-/* Force hamburger above everything */
-.menu-toggle {
-  position: relative !important;
-  z-index: 9999 !important;
-  pointer-events: auto !important;
-}
-
-/* Prevent nav from blocking taps when hidden */
-@media (max-width: 1024px) {
-  .site-nav {
-    pointer-events: none;
-  }
-
-  .site-nav.active {
-    pointer-events: auto;
-  }
-}
-/* Header grouping fix */
-.nav-group {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .nav-group {
-    width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-  }
 }
