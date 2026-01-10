@@ -325,3 +325,89 @@ a {
     display: none; /* will be toggled via JS later */
   }
 }
+/* ===============================
+   MOBILE FIXES (CRITICAL)
+   =============================== */
+
+@media (max-width: 768px) {
+
+  /* ---------- HEADER ---------- */
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .brand-text {
+    line-height: 1.2;
+  }
+
+  .lang-select {
+    margin-top: 4px;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner {
+    display: block;
+  }
+
+  .hero-images,
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hero-content {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* ---------- CTA BUTTON ---------- */
+  .hero .btn {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  /* ---------- FLOATING BUTTONS ---------- */
+  .fab.call,
+  .fab.whatsapp {
+    bottom: 16px;
+  }
+
+  .fab.call {
+    right: 70px;
+  }
+
+  .fab.whatsapp {
+    right: 16px;
+  }
+
+  /* ---------- CARD GRIDS ---------- */
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- SECTION SPACING ---------- */
+  .section {
+    padding: 32px 0;
+  }
+}
