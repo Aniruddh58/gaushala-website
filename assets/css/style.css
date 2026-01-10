@@ -1,7 +1,7 @@
 /* =========================================================
    Shree Ramkrishna Gau Raksha Sewa Samiti
-   Global Stylesheet (FINAL LOCKED)
-   Mobile + Desktop Stable | NGO Grade
+   FINAL GLOBAL STYLESHEET
+   Desktop + Mobile LOCKED
    ========================================================= */
 
 /* ---------- VARIABLES ---------- */
@@ -80,7 +80,7 @@ a {
   border-bottom: 2px solid var(--primary-saffron);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
 }
 
 .header-inner {
@@ -90,6 +90,7 @@ a {
   padding: 12px 0;
 }
 
+/* ---------- BRAND ---------- */
 .brand {
   display: flex;
   align-items: center;
@@ -138,6 +139,7 @@ a {
   color: var(--secondary-red);
 }
 
+/* ---------- LANGUAGE ---------- */
 .lang-select {
   border: 1px solid var(--border-light);
   padding: 4px 6px;
@@ -145,12 +147,14 @@ a {
   background: #fff;
 }
 
+/* ---------- HAMBURGER ---------- */
 .menu-toggle {
   display: none;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 1001;
 }
 
 /* ---------- HERO ---------- */
@@ -243,7 +247,7 @@ a {
 /* ---------- FLOATING BUTTONS ---------- */
 .fab {
   position: fixed;
-  z-index: 200;
+  z-index: 999;
 }
 
 .fab.whatsapp {
@@ -270,19 +274,24 @@ a {
   box-shadow: var(--shadow-soft);
 }
 
-/* ---------- MOBILE ---------- */
+/* =========================================================
+   MOBILE ONLY (FINAL & LOCKED)
+   ========================================================= */
 @media (max-width: 768px) {
 
+  /* Header stack */
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
   }
 
+  /* Show hamburger */
   .menu-toggle {
     display: block;
   }
 
+  /* Hide nav by default */
   .site-nav {
     display: none;
     flex-direction: column;
@@ -296,10 +305,12 @@ a {
     border-bottom: 1px solid var(--border-light);
   }
 
+  /* Show nav when active */
   .site-nav.active {
     display: flex;
   }
 
+  /* Hero mobile */
   .hero {
     text-align: center;
   }
@@ -322,5 +333,17 @@ a {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   DESKTOP SAFETY (FORCE NAV VISIBILITY)
+   ========================================================= */
+@media (min-width: 769px) {
+  .site-nav {
+    display: flex !important;
+  }
+  .menu-toggle {
+    display: none !important;
   }
 }
