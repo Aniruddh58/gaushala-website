@@ -251,24 +251,3 @@ a {
   }
 }
 
-/* ===============================
-   FINAL CLICK FIX FOR HAMBURGER
-   =============================== */
-
-/* Hamburger must always receive clicks */
-.menu-toggle {
-  position: relative;
-  z-index: 9999;
-  pointer-events: auto;
-}
-
-/* Prevent nav-group from blocking taps when closed */
-@media (max-width: 768px) {
-  .nav-group {
-    pointer-events: none;
-  }
-
-  .nav-group.active {
-    pointer-events: auto;
-  }
-}
