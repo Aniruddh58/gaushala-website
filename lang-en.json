@@ -1,0 +1,58 @@
+{
+  "site_name": "Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "site_tagline": "Social Welfare through Service, Values and Dedication",
+
+  "nav_home": "Home",
+  "nav_about": "About Us",
+  "nav_activities": "Activities",
+  "nav_stories": "Stories",
+  "nav_members": "Members",
+  "nav_donate": "Donate",
+  "nav_contact": "Contact",
+
+  "hero_title": "Every Cow Deserves Dignity and Protection",
+  "hero_subtitle": "We are dedicated to the rescue, protection and lifelong care of abandoned, injured and elderly cows.",
+  "hero_cta_donate": "Support Gau Seva",
+  "hero_cta_join": "Become a Member",
+
+  "about_heading": "About Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "about_text_1": "Shree Ramkrishna Gau Raksha Sewa Samiti is a dedicated social service organization inspired by the spiritual teachings, values and selfless service principles of Lord Shri Ram and Sri Ramakrishna Paramhansa.",
+  "about_text_2": "Our mission is holistic social development through selfless human service. We firmly believe that ‘Service to God is service to mankind’.",
+  "about_text_3": "The organization actively works in the areas of education, healthcare, rural development, women empowerment, youth development and upliftment of marginalized communities.",
+
+  "goals_heading": "Our Key Objectives",
+  "goal_1": "Protection of helpless and abandoned cows",
+  "goal_2": "Establishment and development of Goshala",
+  "goal_3": "Cow healthcare and veterinary services",
+  "goal_4": "Balanced cow feed and nutrition",
+  "goal_5": "Development of cow-based sustainable products",
+  "goal_6": "Environmental protection and promotion of organic practices",
+
+  "ved_project_heading": "Ved Divyang Shikshan Prashikshan Seva Sansthan",
+  "ved_project_text": "Ved Divyang Shikshan Prashikshan Seva Sansthan is a key initiative of Shree Ramkrishna Gau Raksha Sewa Samiti. The institute aims to provide education, training and self-reliance opportunities to persons with disabilities.",
+  "ved_project_text_2": "We believe that disability is not a weakness but a different ability. With proper guidance and opportunities, every individual can lead a dignified and independent life.",
+
+  "activities_heading": "Our Major Activities",
+  "activity_1": "Cow protection and rehabilitation",
+  "activity_2": "Regular medical check-ups and treatment",
+  "activity_3": "Fodder and nutrition distribution",
+  "activity_4": "Seasonal care programs (summer & winter)",
+  "activity_5": "Social, cultural and awareness programs",
+
+  "stories_heading": "Stories of Service and Compassion",
+  "story_placeholder": "Inspirational stories related to our Gau Seva initiatives will be shared soon.",
+
+  "members_heading": "Management Committee",
+  "members_text": "The management committee responsible for guiding and overseeing the organization’s activities.",
+
+  "donate_heading": "Donate for Gau Seva",
+  "donate_text": "Even a small contribution from you can bring a meaningful change in the lives of cows. Your donation helps us provide food, medical care and protection.",
+  "donate_note": "After donating, please fill the confirmation form.",
+
+  "contact_heading": "Contact Us",
+  "contact_address": "Gau Gram-Gariyawan, Post-Vallipur (Dwarikaganj), Sultanpur, Uttar Pradesh, India",
+  "contact_phone": "Phone",
+  "contact_email": "Email",
+
+  "footer_text": "© Shree Ramkrishna Gau Raksha Sewa Samiti | All Rights Reserved"
+}

@@ -1,0 +1,327 @@
+/* =========================================================
+   Shree Ramkrishna Gau Raksha Sewa Samiti
+   Global Stylesheet
+   Hindi-first | NGO | GitHub Pages Safe
+   ========================================================= */
+
+/* ---------- CSS VARIABLES (COLOR SYSTEM) ---------- */
+:root {
+  --primary-saffron: #F4B400;   /* Seva, positivity */
+  --secondary-red:   #C62828;   /* Strength, protection */
+  --accent-green:    #2E7D32;   /* Nature, sustainability */
+
+  --bg-light:        #FAFAF8;   /* Calm off-white */
+  --text-main:       #2B2B2B;   /* Charcoal */
+  --text-muted:      #6B6B6B;
+
+  --border-light:    #E0E0E0;
+  --shadow-soft:     0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* ---------- RESET & BASE ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+h1, h2, h3, h4 {
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  color: var(--text-main);
+}
+
+p {
+  margin: 0 0 14px 0;
+  color: var(--text-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- LAYOUT HELPERS ---------- */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  color: var(--secondary-red);
+}
+
+.section-title p {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: white;
+  border-bottom: 2px solid var(--primary-saffron);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  background: var(--secondary-red);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.brand-tagline {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ---------- NAVIGATION ---------- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-nav a {
+  font-weight: 500;
+  padding: 6px 4px;
+}
+
+.site-nav a:hover {
+  color: var(--secondary-red);
+}
+
+.lang-select {
+  border: 1px solid var(--border-light);
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: white;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("../images/hero.jpg") center / cover no-repeat;
+  color: white;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.hero-content p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--primary-saffron);
+  color: black;
+}
+
+.btn-primary:hover {
+  background: #e6a900;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--text-main);
+}
+
+/* ---------- CARDS ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  color: var(--secondary-red);
+}
+
+/* ---------- ACTIVITIES / LIST ---------- */
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: #111;
+  color: #ddd;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.site-footer h4 {
+  color: var(--primary-saffron);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 14px;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+}
+
+/* ---------- FLOATING ACTION BUTTONS ---------- */
+.fab {
+  position: fixed;
+  right: 16px;
+  z-index: 200;
+}
+
+.fab.whatsapp {
+  bottom: 16px;
+  background: #25D366;
+}
+
+.fab.call {
+  bottom: 76px;
+  background: var(--secondary-red);
+}
+
+.fab a {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .site-nav {
+    display: none; /* will be toggled via JS later */
+  }
+}
