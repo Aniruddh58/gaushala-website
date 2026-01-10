@@ -21,18 +21,26 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="container header-inner">
+ <!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
 
-      <a href="index.html" class="brand">
-        <div class="brand-mark">ॐ</div>
-        <div class="brand-text">
-          <span class="brand-name" data-i18n="site_name"></span>
-          <span class="brand-tagline" data-i18n="site_tagline"></span>
-        </div>
-      </a>
+    <!-- BRAND -->
+    <a href="index.html" class="brand">
+      <div class="brand-mark">ॐ</div>
+      <div class="brand-text">
+        <span class="brand-name" data-i18n="site_name"></span>
+        <span class="brand-tagline" data-i18n="site_tagline"></span>
+      </div>
+    </a>
 
+    <!-- HAMBURGER (MUST COME BEFORE NAV) -->
+    <button class="menu-toggle" type="button" aria-label="Toggle Menu">
+      ☰
+    </button>
+
+    <!-- NAV + LANGUAGE -->
+    <div class="nav-group">
       <nav class="site-nav">
         <a href="index.html" data-i18n="nav_home"></a>
         <a href="about.html" data-i18n="nav_about"></a>
@@ -47,10 +55,11 @@
         <option value="hi">हिंदी</option>
         <option value="en">English</option>
       </select>
-<button class="menu-toggle" type="button" aria-label="Toggle Menu">☰</button>
-
     </div>
-  </header>
+
+  </div>
+</header>
+
 
   <!-- ================= PAGE HEADER ================= -->
   <section class="section" style="background:#fff;">
