@@ -1,57 +1,43 @@
-/* =========================================================
-   Shree Ramkrishna Gau Raksha Sewa Samiti
-   main.js
-   - Hindi-first language system
-   - Safe for GitHub Pages
-   - No frameworks, no hacks
-   ========================================================= */
+const DEFAULT_LANG = 'hi';
 
-document.addEventListener("DOMContentLoaded", function () {
+function getBasePath() {
+  // Works for both localhost and GitHub Pages
+  const path = window.location.pathname;
+  return path.includes('/gaushala-website/')
+    ? '/gaushala-website/'
+    : '/';
+}
 
-  /* ---------------- LANGUAGE TOGGLE ---------------- */
+async function loadLanguage(lang) {
+  const base = getBasePath();
 
-  const langSelect = document.querySelector("[data-lang-select]");
-  const defaultLang = "hi";
+  try {
+    const response = await fetch(`${base}lang-${lang}.json`);
+    const translations = await response.json();
 
-  function applyLanguage(lang) {
-    fetch(`lang-${lang}.json`)
-      .then(response => response.json())
-      .then(dictionary => {
-        document.querySelectorAll("[data-i18n]").forEach(el => {
-          const key = el.getAttribute("data-i18n");
-          if (dictionary[key]) {
-            el.innerHTML = dictionary[key];
-          }
-        });
-      })
-      .catch(() => {
-        console.warn("Language file not found:", lang);
-      });
-  }
-
-  if (langSelect) {
-    const savedLang = localStorage.getItem("siteLang") || defaultLang;
-    langSelect.value = savedLang;
-    applyLanguage(savedLang);
-
-    langSelect.addEventListener("change", function () {
-      localStorage.setItem("siteLang", this.value);
-      applyLanguage(this.value);
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[key]) {
+        el.textContent = translations[key];
+      }
     });
-  } else {
-    // Apply default language if selector not present
-    applyLanguage(localStorage.getItem("siteLang") || defaultLang);
+
+    localStorage.setItem('lang', lang);
+  } catch (err) {
+    console.error('Language load failed:', err);
   }
+}
 
-  /* ---------------- MOBILE NAV TOGGLE ---------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('lang') || DEFAULT_LANG;
+  const selector = document.querySelector('[data-lang-select]');
 
-  const navToggle = document.querySelector("[data-nav-toggle]");
-  const siteNav = document.querySelector(".site-nav");
-
-  if (navToggle && siteNav) {
-    navToggle.addEventListener("click", function () {
-      siteNav.classList.toggle("nav-open");
+  if (selector) {
+    selector.value = savedLang;
+    selector.addEventListener('change', e => {
+      loadLanguage(e.target.value);
     });
   }
 
+  loadLanguage(savedLang);
 });
