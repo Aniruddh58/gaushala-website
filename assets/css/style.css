@@ -223,19 +223,52 @@ a {
   color: #fff;
 }
 
-/* ---------- YOUTUBE ---------- */
+/* =========================================
+   SMALL RESPONSIVE YOUTUBE EMBED (FINAL)
+   ========================================= */
+
 .youtube-wrapper {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top: 56.25%;
+  max-width: 420px;   /* SMALL size */
+  margin: 24px auto; /* center */
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 .youtube-wrapper iframe {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  border: 0;
+}
+
+/* Mobile even smaller */
+@media (max-width: 480px) {
+  .youtube-wrapper {
+    max-width: 320px;
+  }
+}
+
+/* ===============================
+   FINAL CLICK FIX FOR HAMBURGER
+   =============================== */
+
+/* Hamburger must always receive clicks */
+.menu-toggle {
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+/* Prevent nav-group from blocking taps when closed */
+@media (max-width: 768px) {
+  .nav-group {
+    pointer-events: none;
+  }
+
+  .nav-group.active {
+    pointer-events: auto;
+  }
 }
