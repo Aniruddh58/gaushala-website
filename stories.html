@@ -2,18 +2,16 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <title>कहानियाँ | श्री रामकृष्ण गौ रक्षा सेवा समिति</title>
+  <title data-i18n="stories_page_title"></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="श्री रामकृष्ण गौ रक्षा सेवा समिति द्वारा की गई गौ सेवा और सामाजिक कार्यों से जुड़ी प्रेरणादायक कहानियाँ।" />
+  <meta name="description" data-i18n="stories_meta_desc" />
   <meta name="robots" content="index, follow" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,7 +19,8 @@
 
 <body>
 
- <header class="site-header">
+<!-- ================= HEADER ================= -->
+<header class="site-header">
   <div class="container header-inner">
 
     <a href="index.html" class="brand">
@@ -32,9 +31,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-      ☰
-    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
 
     <div class="nav-group" id="navGroup">
       <nav class="site-nav">
@@ -56,120 +53,92 @@
   </div>
 </header>
 
-
-
-  <!-- ================= PAGE HEADER ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-i18n="stories_heading"></h2>
-        <p>
-          सेवा, करुणा और समर्पण से जुड़ी सच्ची घटनाएँ जो हमें आगे बढ़ने की
-          प्रेरणा देती हैं।
-        </p>
-      </div>
+<!-- ================= PAGE HEADER ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="stories_heading"></h2>
+      <p data-i18n="stories_intro"></p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= STORIES LIST ================= -->
-  <section class="section">
-    <div class="container">
+<!-- ================= STORIES LIST ================= -->
+<section class="section">
+  <div class="container">
 
-      <div class="card-grid">
+    <div class="card-grid">
 
-        <!-- Story 1 -->
-        <div class="card">
-          <img src="assets/images/gau-rescue.jpg" alt="Gau Rescue">
-          <div class="card-body">
-            <h3>एक घायल गौ माता की जीवन रक्षा</h3>
-            <p>
-              सड़क किनारे गंभीर रूप से घायल अवस्था में मिली एक गौ माता को
-              संस्था की टीम द्वारा तत्काल उपचार प्रदान किया गया। निरंतर
-              सेवा और देखभाल के परिणामस्वरूप आज वह स्वस्थ जीवन जी रही है।
-            </p>
-          </div>
+      <!-- Story 1 -->
+      <div class="card">
+        <img src="assets/images/gau-rescue.jpg" alt="Gau Rescue">
+        <div class="card-body">
+          <h3 data-i18n="story_1_title"></h3>
+          <p data-i18n="story_1_text"></p>
         </div>
+      </div>
 
-        <!-- Story 2 -->
-        <div class="card">
-          <img src="assets/images/shelter.jpg" alt="Goshala Shelter">
-          <div class="card-body">
-            <h3>आश्रय से सम्मान तक</h3>
-            <p>
-              कई वृद्ध एवं असहाय गायों को हमारी गौशाला में सुरक्षित आश्रय
-              प्रदान किया गया, जहाँ उन्हें नियमित आहार, चिकित्सा एवं
-              स्नेहपूर्ण वातावरण प्राप्त होता है।
-            </p>
-          </div>
+      <!-- Story 2 -->
+      <div class="card">
+        <img src="assets/images/shelter.jpg" alt="Goshala Shelter">
+        <div class="card-body">
+          <h3 data-i18n="story_2_title"></h3>
+          <p data-i18n="story_2_text"></p>
         </div>
+      </div>
 
-        <!-- Story 3 -->
-        <div class="card">
-          <img src="assets/images/activity-1.jpg" alt="Community Service">
-          <div class="card-body">
-            <h3>समुदाय के साथ गौ सेवा</h3>
-            <p>
-              स्थानीय ग्रामीणों एवं स्वयंसेवकों के सहयोग से गौ सेवा
-              जागरूकता कार्यक्रम आयोजित किए गए, जिससे समाज में करुणा एवं
-              सेवा भाव को बढ़ावा मिला।
-            </p>
-          </div>
+      <!-- Story 3 -->
+      <div class="card">
+        <img src="assets/images/activity-1.jpg" alt="Community Service">
+        <div class="card-body">
+          <h3 data-i18n="story_3_title"></h3>
+          <p data-i18n="story_3_text"></p>
         </div>
-
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
+
+<!-- ================= VIDEO ================= -->
 <section class="section" id="gau-dharma-video">
   <div class="container">
     <div class="section-title">
-      <h2 data-i18n="gau_video_title">सनातन धर्म में गौ माता का महत्व</h2>
-      <p data-i18n="gau_video_desc">
-        शास्त्रों, वेदों और पुराणों में गौ माता के धार्मिक, सामाजिक और आध्यात्मिक महत्व को जानें।
-      </p>
+      <h2 data-i18n="gau_video_title"></h2>
+      <p data-i18n="gau_video_desc"></p>
     </div>
 
     <div class="youtube-wrapper">
       <iframe
         src="https://www.youtube.com/embed/Q8H9J9GauMA"
-        title="सनातन धर्म में गौ माता का महत्व"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        title="Gau Mata in Sanatan Dharma"
         allowfullscreen>
       </iframe>
     </div>
   </div>
 </section>
 
-  <!-- ================= CTA ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container" style="text-align:center;">
-      <h3>आप भी इन कहानियों का हिस्सा बन सकते हैं</h3>
-      <p>
-        आपकी सहायता से और भी कई जीवन बदले जा सकते हैं।
-      </p>
-      <a href="donate.html" class="btn btn-primary">गौ सेवा में योगदान दें</a>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p data-i18n="footer_text"></p>
-    </div>
-  </footer>
-
-  <!-- ================= FLOATING ACTION BUTTONS ================= -->
-  <div class="fab call">
-    <a href="tel:+919519047327">📞</a>
+<!-- ================= CTA ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container" style="text-align:center;">
+    <h3 data-i18n="stories_cta_title"></h3>
+    <p data-i18n="stories_cta_text"></p>
+    <a href="donate.html" class="btn btn-primary" data-i18n="stories_cta_button"></a>
   </div>
+</section>
 
-  <div class="fab whatsapp">
-    <a href="https://wa.me/919519047327" target="_blank">💬</a>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-i18n="footer_text"></p>
   </div>
+</footer>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+<!-- Floating Buttons -->
+<div class="fab call"><a href="tel:+919519047327">📞</a></div>
+<div class="fab whatsapp"><a href="https://wa.me/919519047327" target="_blank">💬</a></div>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

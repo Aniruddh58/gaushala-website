@@ -49,5 +49,86 @@
   "footer_text": "© Shree Ramkrishna Gau Raksha Sewa Samiti | All Rights Reserved",
 
   "gau_video_title": "Importance of Cow in Sanatan Dharma",
-  "gau_video_desc": "Learn the religious, social, and spiritual importance of cows as described in the Vedas and Hindu scriptures."
+  "gau_video_desc": "Learn the religious, social, and spiritual importance of cows as described in the Vedas and Hindu scriptures.",{
+  "activities_page_title": "Activities | Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "activities_meta_desc": "Current and upcoming activities of Shree Ramkrishna Gau Raksha Sewa Samiti.",
+
+  "activities_heading": "Our Activities",
+  "activities_intro": "Ongoing initiatives and future plans undertaken by the organization.",
+
+  "activities_current_title": "Ongoing Activities",
+
+  "activities_planned_title": "Planned / Upcoming Activities",
+
+  "planned_activity_1": "Construction and expansion of new Goshala",
+  "planned_activity_2": "Launch of mobile veterinary services",
+  "planned_activity_3": "Production of organic manure and cow-based products",
+  "planned_activity_4": "Awareness campaigns in rural areas",
+  "planned_activity_5": "Volunteer and youth training programs",
+
+  "activities_cta_title": "You Can Be a Part of This Service Journey",
+  "activities_cta_text": "You can contribute to Gau Seva through donation, membership or volunteering.",
+  "activities_cta_button": "Donate Now",
+  
+  "stories_page_title": "Stories | Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "stories_meta_desc": "Inspirational stories related to cow protection and social service.",
+
+  "stories_heading": "Stories of Service and Compassion",
+  "stories_intro": "Real stories of service, compassion and dedication that inspire us to move forward.",
+
+  "story_1_title": "Saving the Life of an Injured Cow",
+  "story_1_text": "An injured cow found on the roadside was immediately treated by our team and is now living a healthy life.",
+
+  "story_2_title": "From Shelter to Dignity",
+  "story_2_text": "Many abandoned and elderly cows were given safe shelter, food and medical care at our goshala.",
+
+  "story_3_title": "Gau Seva with the Community",
+  "story_3_text": "Awareness programs were organized with villagers and volunteers to promote compassion and service.",
+
+  "stories_cta_title": "You Can Be Part of These Stories",
+  "stories_cta_text": "With your support, many more lives can be transformed.",
+  "stories_cta_button": "Contribute to Gau Seva",
+  
+  "contact_page_title": "Contact Us | Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "contact_meta_desc": "Get in touch with Shree Ramkrishna Gau Raksha Sewa Samiti. We are always available for your queries, suggestions and support.",
+
+  "contact_form_title": "Contact Form",
+  "contact_form_desc": "For any information, suggestions or support, please fill out the form below.",
+
+  "donate_page_title": "Donate | Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "donate_meta_desc": "Donate for Gau Seva. Your contribution supports fodder, medical care and protection.",
+
+  "donate_upi_title": "Donate via UPI",
+  "donate_upi_desc": "You can donate directly using the following UPI ID:",
+  "donate_upi_note": "After donating, please fill out the confirmation form below.",
+
+  "donate_qr_title": "Scan QR Code",
+  "donate_qr_desc": "Scan the QR code using any UPI app to make a donation.",
+
+  "donate_form_title": "Donation Confirmation Form",
+
+  "donate_cta_title": "Your Support Is Valuable",
+  "donate_cta_text": "With your support, we can serve and protect more cows.",
+  
+  "members_page_title": "Members | Shree Ramkrishna Gau Raksha Sewa Samiti",
+  "members_meta_desc": "Management committee and membership information of the organization.",
+
+  "members_heading": "Management Committee",
+  "members_text": "The committee responsible for guiding and overseeing the organization’s activities.",
+
+  "member_role_president": "President",
+  "member_role_secretary": "General Secretary",
+  "member_role_treasurer": "Treasurer",
+  "member_name_placeholder": "Name to be added",
+
+  "membership_cta_title": "Join With Us",
+  "membership_cta_text": "If you wish to participate in this journey of service, dedication and compassion, apply for membership.",
+
+  "membership_apply_button": "Apply for Membership",
+  "membership_verify_button": "Verify Membership"
+
+
 }
+
+
+

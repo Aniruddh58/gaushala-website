@@ -2,18 +2,19 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <title>सदस्य | श्री रामकृष्ण गौ रक्षा सेवा समिति</title>
+  <title data-i18n="members_page_title"></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="श्री रामकृष्ण गौ रक्षा सेवा समिति की प्रबंधन समिति एवं सदस्यता संबंधी जानकारी।" />
+  <meta name="description" data-i18n="members_meta_desc" />
   <meta name="robots" content="index, follow" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,7 +22,8 @@
 
 <body>
 
- <header class="site-header">
+<!-- ================= HEADER ================= -->
+<header class="site-header">
   <div class="container header-inner">
 
     <a href="index.html" class="brand">
@@ -32,9 +34,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-      ☰
-    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
 
     <div class="nav-group" id="navGroup">
       <nav class="site-nav">
@@ -56,100 +56,88 @@
   </div>
 </header>
 
-
-  <!-- ================= PAGE HEADER ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-i18n="members_heading"></h2>
-        <p data-i18n="members_text"></p>
-      </div>
+<!-- ================= PAGE HEADER ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="members_heading"></h2>
+      <p data-i18n="members_text"></p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= MANAGEMENT BODY ================= -->
-  <section class="section">
-    <div class="container">
+<!-- ================= MANAGEMENT BODY ================= -->
+<section class="section">
+  <div class="container">
 
-      <div class="card-grid">
+    <div class="card-grid">
 
-        <!-- Member 1 -->
-        <div class="card">
-          <img src="assets/images/member-placeholder.jpg" alt="Member">
-          <div class="card-body">
-            <h3>अध्यक्ष</h3>
-            <p>नाम यहाँ लिखें</p>
-          </div>
+      <div class="card">
+        <img src="assets/images/member-placeholder.jpg" alt="Member">
+        <div class="card-body">
+          <h3 data-i18n="member_role_president"></h3>
+          <p data-i18n="member_name_placeholder"></p>
         </div>
+      </div>
 
-        <!-- Member 2 -->
-        <div class="card">
-          <img src="assets/images/member-placeholder.jpg" alt="Member">
-          <div class="card-body">
-            <h3>महासचिव</h3>
-            <p>नाम यहाँ लिखें</p>
-          </div>
+      <div class="card">
+        <img src="assets/images/member-placeholder.jpg" alt="Member">
+        <div class="card-body">
+          <h3 data-i18n="member_role_secretary"></h3>
+          <p data-i18n="member_name_placeholder"></p>
         </div>
+      </div>
 
-        <!-- Member 3 -->
-        <div class="card">
-          <img src="assets/images/member-placeholder.jpg" alt="Member">
-          <div class="card-body">
-            <h3>कोषाध्यक्ष</h3>
-            <p>नाम यहाँ लिखें</p>
-          </div>
+      <div class="card">
+        <img src="assets/images/member-placeholder.jpg" alt="Member">
+        <div class="card-body">
+          <h3 data-i18n="member_role_treasurer"></h3>
+          <p data-i18n="member_name_placeholder"></p>
         </div>
-
       </div>
 
     </div>
-  </section>
 
-  <!-- ================= MEMBERSHIP CTA ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container" style="text-align:center;">
-
-      <h3>हमारे साथ जुड़ें</h3>
-      <p>
-        यदि आप सेवा, समर्पण और करुणा के इस कार्य में सहभागी बनना चाहते हैं,
-        तो सदस्यता हेतु आवेदन करें।
-      </p>
-
-      <a href="https://forms.gle/YOUR_MEMBERSHIP_FORM"
-         class="btn btn-primary"
-         target="_blank">
-        सदस्यता हेतु आवेदन करें
-      </a>
-
-      <br><br>
-
-      <a href="https://forms.gle/YOUR_VERIFICATION_FORM"
-         class="btn btn-outline"
-         target="_blank">
-        सदस्य सत्यापन करें
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p data-i18n="footer_text"></p>
-    </div>
-  </footer>
-
-  <!-- ================= FLOATING ACTION BUTTONS ================= -->
-  <div class="fab call">
-    <a href="tel:+919519047327">📞</a>
   </div>
+</section>
 
-  <div class="fab whatsapp">
-    <a href="https://wa.me/919519047327" target="_blank">💬</a>
+<!-- ================= MEMBERSHIP CTA ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container" style="text-align:center;">
+
+    <h3 data-i18n="membership_cta_title"></h3>
+    <p data-i18n="membership_cta_text"></p>
+
+    <a
+      href="https://forms.gle/YOUR_MEMBERSHIP_FORM"
+      class="btn btn-primary"
+      target="_blank"
+      data-i18n="membership_apply_button">
+    </a>
+
+    <br><br>
+
+    <a
+      href="https://forms.gle/YOUR_VERIFICATION_FORM"
+      class="btn btn-outline"
+      target="_blank"
+      data-i18n="membership_verify_button">
+    </a>
+
   </div>
+</section>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-i18n="footer_text"></p>
+  </div>
+</footer>
 
+<!-- Floating Buttons -->
+<div class="fab call"><a href="tel:+919519047327">📞</a></div>
+<div class="fab whatsapp"><a href="https://wa.me/919519047327" target="_blank">💬</a></div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>

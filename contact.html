@@ -2,18 +2,19 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <title>संपर्क करें | श्री रामकृष्ण गौ रक्षा सेवा समिति</title>
+  <title data-i18n="contact_page_title"></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="श्री रामकृष्ण गौ रक्षा सेवा समिति से संपर्क करें। हम आपकी सेवा, सुझाव और सहयोग के लिए सदैव उपलब्ध हैं।" />
+  <meta name="description" data-i18n="contact_meta_desc" />
   <meta name="robots" content="index, follow" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,7 +22,8 @@
 
 <body>
 
- <header class="site-header">
+<!-- ================= HEADER ================= -->
+<header class="site-header">
   <div class="container header-inner">
 
     <a href="index.html" class="brand">
@@ -32,9 +34,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-      ☰
-    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
 
     <div class="nav-group" id="navGroup">
       <nav class="site-nav">
@@ -56,46 +56,36 @@
   </div>
 </header>
 
+<!-- ================= CONTACT SECTION ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container">
 
-  <!-- ================= CONTACT FORM ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
+    <h3 style="color:#C62828;" data-i18n="contact_form_title"></h3>
+    <p data-i18n="contact_form_desc"></p>
 
-      <h3 style="color:#C62828;">संपर्क फॉर्म</h3>
-      <p>
-        किसी भी जानकारी, सुझाव या सहयोग हेतु कृपया नीचे दिए गए फॉर्म को भरें।
-      </p>
+    <!-- Google Form Embed -->
+    <iframe
+      src="https://forms.gle/YOUR_CONTACT_FORM"
+      width="100%"
+      height="800"
+      frameborder="0"
+      loading="lazy">
+    </iframe>
 
-      <!-- Google Form Embed -->
-      <iframe
-        src="https://forms.gle/YOUR_CONTACT_FORM"
-        width="100%"
-        height="800"
-        frameborder="0"
-        loading="lazy">
-      </iframe>
-
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p data-i18n="footer_text"></p>
-    </div>
-  </footer>
-
-  <!-- ================= FLOATING ACTION BUTTONS ================= -->
-  <div class="fab call">
-    <a href="tel:+919519047327">📞</a>
   </div>
+</section>
 
-  <div class="fab whatsapp">
-    <a href="https://wa.me/919519047327" target="_blank">💬</a>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-i18n="footer_text"></p>
   </div>
+</footer>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+<!-- Floating Buttons -->
+<div class="fab call"><a href="tel:+919519047327">📞</a></div>
+<div class="fab whatsapp"><a href="https://wa.me/919519047327" target="_blank">💬</a></div>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

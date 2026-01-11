@@ -2,18 +2,16 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8" />
-  <title>गतिविधियाँ | श्री रामकृष्ण गौ रक्षा सेवा समिति</title>
+  <title data-i18n="activities_page_title"></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="श्री रामकृष्ण गौ रक्षा सेवा समिति की वर्तमान एवं प्रस्तावित गतिविधियाँ।" />
+  <meta name="description" data-i18n="activities_meta_desc" />
   <meta name="robots" content="index, follow" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,6 +19,7 @@
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container header-inner">
 
@@ -32,9 +31,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-      ☰
-    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
 
     <div class="nav-group" id="navGroup">
       <nav class="site-nav">
@@ -56,85 +53,70 @@
   </div>
 </header>
 
-
-
-  <!-- ================= PAGE HEADER ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-i18n="activities_heading"></h2>
-        <p>
-          संस्था द्वारा संचालित वर्तमान गतिविधियाँ एवं निकट भविष्य की
-          योजनाएँ।
-        </p>
-      </div>
+<!-- ================= PAGE HEADER ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <div class="section-title">
+      <h2 data-i18n="activities_heading"></h2>
+      <p data-i18n="activities_intro"></p>
     </div>
-  </section>
-
-  <!-- ================= ONGOING ACTIVITIES ================= -->
-  <section class="section">
-    <div class="container">
-
-      <h3 style="color:#C62828;">वर्तमान गतिविधियाँ</h3>
-
-      <ul class="icon-list">
-        <li data-i18n="activity_1"></li>
-        <li data-i18n="activity_2"></li>
-        <li data-i18n="activity_3"></li>
-        <li data-i18n="activity_4"></li>
-        <li data-i18n="activity_5"></li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!-- ================= PLANNED ACTIVITIES ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
-
-      <h3 style="color:#C62828;">प्रस्तावित / आगामी गतिविधियाँ</h3>
-
-      <ul class="icon-list">
-        <li>नवीन गौशाला निर्माण एवं विस्तार</li>
-        <li>मोबाइल गौ चिकित्सा सेवा की शुरुआत</li>
-        <li>जैविक खाद एवं गौ-आधारित उत्पादों का उत्पादन</li>
-        <li>ग्रामीण क्षेत्रों में जागरूकता अभियान</li>
-        <li>स्वयंसेवक एवं युवा प्रशिक्षण कार्यक्रम</li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!-- ================= CTA ================= -->
-  <section class="section">
-    <div class="container" style="text-align:center;">
-      <h3>आप भी इस सेवा यात्रा का हिस्सा बन सकते हैं</h3>
-      <p>
-        दान, सदस्यता या स्वयंसेवा के माध्यम से आप गौ सेवा में अपना
-        योगदान दे सकते हैं।
-      </p>
-      <a href="donate.html" class="btn btn-primary">दान करें</a>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p data-i18n="footer_text"></p>
-    </div>
-  </footer>
-
-  <!-- ================= FLOATING ACTION BUTTONS ================= -->
-  <div class="fab call">
-    <a href="tel:+919519047327">📞</a>
   </div>
+</section>
 
-  <div class="fab whatsapp">
-    <a href="https://wa.me/919519047327" target="_blank">💬</a>
+<!-- ================= CURRENT ACTIVITIES ================= -->
+<section class="section">
+  <div class="container">
+
+    <h3 style="color:#C62828;" data-i18n="activities_current_title"></h3>
+
+    <ul class="icon-list">
+      <li data-i18n="activity_1"></li>
+      <li data-i18n="activity_2"></li>
+      <li data-i18n="activity_3"></li>
+      <li data-i18n="activity_4"></li>
+      <li data-i18n="activity_5"></li>
+    </ul>
+
   </div>
+</section>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+<!-- ================= PLANNED ACTIVITIES ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container">
 
+    <h3 style="color:#C62828;" data-i18n="activities_planned_title"></h3>
+
+    <ul class="icon-list">
+      <li data-i18n="planned_activity_1"></li>
+      <li data-i18n="planned_activity_2"></li>
+      <li data-i18n="planned_activity_3"></li>
+      <li data-i18n="planned_activity_4"></li>
+      <li data-i18n="planned_activity_5"></li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section">
+  <div class="container" style="text-align:center;">
+    <h3 data-i18n="activities_cta_title"></h3>
+    <p data-i18n="activities_cta_text"></p>
+    <a href="donate.html" class="btn btn-primary" data-i18n="activities_cta_button"></a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-i18n="footer_text"></p>
+  </div>
+</footer>
+
+<!-- Floating Buttons -->
+<div class="fab call"><a href="tel:+919519047327">📞</a></div>
+<div class="fab whatsapp"><a href="https://wa.me/919519047327" target="_blank">💬</a></div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
