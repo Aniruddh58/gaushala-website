@@ -1,8 +1,7 @@
 const DEFAULT_LANG = 'hi';
 
 function getBasePath() {
-  const path = window.location.pathname;
-  return path.includes('/gaushala-website/')
+  return window.location.pathname.includes('/gaushala-website/')
     ? '/gaushala-website/'
     : '/';
 }
@@ -13,13 +12,15 @@ async function loadLanguage(lang) {
     const translations = await response.json();
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[key]) el.textContent = translations[key];
+      const key = el.dataset.i18n;
+      if (translations[key]) {
+        el.textContent = translations[key];
+      }
     });
 
     localStorage.setItem('lang', lang);
   } catch (e) {
-    console.error('Language error', e);
+    console.error('Language load failed', e);
   }
 }
 
@@ -33,15 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
     selector.value = savedLang;
     selector.addEventListener('change', e => loadLanguage(e.target.value));
   }
+
   loadLanguage(savedLang);
 
   /* Mobile Menu */
-  const toggle = document.querySelector('.menu-toggle');
-  const navGroup = document.querySelector('.nav-group');
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('navGroup');
 
-  if (toggle && navGroup) {
+  if (toggle && nav) {
     toggle.addEventListener('click', () => {
-      navGroup.classList.toggle('active');
+      nav.classList.toggle('active');
     });
   }
 });
