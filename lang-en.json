@@ -12,12 +12,12 @@
 
   "hero_title": "Every Cow Deserves Dignity and Protection",
   "hero_subtitle": "We are dedicated to the rescue, protection and lifelong care of abandoned, injured and elderly cows.",
-  "hero_cta_donate": "Support Gau Seva",
-  "hero_cta_join": "Become a Member",
+  "hero_donate": "Support Gau Seva",
+  "hero_member": "Become a Member",
 
   "about_heading": "About Shree Ramkrishna Gau Raksha Sewa Samiti",
   "about_text_1": "Shree Ramkrishna Gau Raksha Sewa Samiti is a dedicated social service organization inspired by the spiritual teachings, values and selfless service principles of Lord Shri Ram and Sri Ramakrishna Paramhansa.",
-  "about_text_2": "Our mission is holistic social development through selfless human service. We firmly believe that ‘Service to God is service to mankind’.",
+  "about_text_2": "Our mission is holistic social development through selfless human service. We firmly believe that service to God is service to mankind.",
   "about_text_3": "The organization actively works in the areas of education, healthcare, rural development, women empowerment, youth development and upliftment of marginalized communities.",
 
   "goals_heading": "Our Key Objectives",
@@ -36,29 +36,18 @@
   "activity_1": "Cow protection and rehabilitation",
   "activity_2": "Regular medical check-ups and treatment",
   "activity_3": "Fodder and nutrition distribution",
-  "activity_4": "Seasonal care programs (summer & winter)",
+  "activity_4": "Seasonal care programs (summer and winter)",
   "activity_5": "Social, cultural and awareness programs",
 
   "stories_heading": "Stories of Service and Compassion",
   "story_placeholder": "Inspirational stories related to our Gau Seva initiatives will be shared soon.",
 
-  "members_heading": "Management Committee",
-  "members_text": "The management committee responsible for guiding and overseeing the organization’s activities.",
-
   "donate_heading": "Donate for Gau Seva",
-  "donate_text": "Even a small contribution from you can bring a meaningful change in the lives of cows. Your donation helps us provide food, medical care and protection.",
+  "donate_text": "Even a small contribution from you can bring a meaningful change in the lives of cows.",
   "donate_note": "After donating, please fill the confirmation form.",
 
-  "contact_heading": "Contact Us",
-  "contact_address": "Gau Gram-Gariyawan, Post-Vallipur (Dwarikaganj), Sultanpur, Uttar Pradesh, India",
-  "contact_phone": "Phone",
-  "contact_email": "Email",
+  "footer_text": "© Shree Ramkrishna Gau Raksha Sewa Samiti | All Rights Reserved",
 
-  "footer_text": "© Shree Ramkrishna Gau Raksha Sewa Samiti | All Rights Reserved,
-  "youtube_title": "Our YouTube Channel",
-"youtube_desc": "Watch our cow protection work, activities, and real stories",
-"gau_video_title": "Importance of Cow in Sanatan Dharma",
-"gau_video_desc": "Learn the religious, social, and spiritual importance of cows as described in Vedas and Hindu scriptures."
-
-
+  "gau_video_title": "Importance of Cow in Sanatan Dharma",
+  "gau_video_desc": "Learn the religious, social, and spiritual importance of cows as described in the Vedas and Hindu scriptures."
 }
