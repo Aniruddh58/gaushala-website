@@ -246,3 +246,20 @@ a {
   }
 }
 
+/* =========================================
+   STORIES PAGE IMAGE FIX (FINAL)
+   ========================================= */
+
+.card img {
+  width: 100%;
+  height: 220px;          /* FIXED height */
+  object-fit: cover;     /* Crop instead of stretch */
+  display: block;
+}
+
+/* Mobile: slightly smaller */
+@media (max-width: 768px) {
+  .card img {
+    height: 180px;
+  }
+}
