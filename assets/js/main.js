@@ -1,49 +1,64 @@
-const DEFAULT_LANG = 'hi';
+/* =========================================================
+   Shree Ramkrishna Gau Raksha Sewa Samiti
+   FINAL MAIN JS
+   Hamburger + Language (LOCKED & SAFE)
+   ========================================================= */
 
+const DEFAULT_LANG = "hi";
+
+/* ---------- BASE PATH (GitHub Pages safe) ---------- */
 function getBasePath() {
-  return window.location.pathname.includes('/gaushala-website/')
-    ? '/gaushala-website/'
-    : '/';
+  const path = window.location.pathname;
+  return path.includes("/gaushala-website/")
+    ? "/gaushala-website/"
+    : "/";
 }
 
+/* ---------- LANGUAGE LOADER ---------- */
 async function loadLanguage(lang) {
+  const base = getBasePath();
+
   try {
-    const response = await fetch(`${getBasePath()}lang-${lang}.json`);
+    const response = await fetch(`${base}lang-${lang}.json`);
     const translations = await response.json();
 
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.dataset.i18n;
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
       if (translations[key]) {
         el.textContent = translations[key];
       }
     });
 
-    localStorage.setItem('lang', lang);
-  } catch (e) {
-    console.error('Language load failed', e);
+    localStorage.setItem("lang", lang);
+  } catch (err) {
+    console.error("Language load failed:", err);
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+/* ---------- DOM READY ---------- */
+document.addEventListener("DOMContentLoaded", () => {
 
-  /* Language */
-  const selector = document.querySelector('[data-lang-select]');
-  const savedLang = localStorage.getItem('lang') || DEFAULT_LANG;
+  /* ===== LANGUAGE ===== */
+  const savedLang = localStorage.getItem("lang") || DEFAULT_LANG;
+  const selector = document.querySelector("[data-lang-select]");
 
   if (selector) {
     selector.value = savedLang;
-    selector.addEventListener('change', e => loadLanguage(e.target.value));
+
+    selector.addEventListener("change", e => {
+      loadLanguage(e.target.value);
+    });
   }
 
   loadLanguage(savedLang);
 
-  /* Mobile Menu */
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('navGroup');
+  /* ===== HAMBURGER MENU ===== */
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navGroup = document.querySelector(".nav-group");
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
+  if (menuToggle && navGroup) {
+    menuToggle.addEventListener("click", () => {
+      navGroup.classList.toggle("active");
     });
   }
 });

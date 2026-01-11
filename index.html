@@ -4,16 +4,19 @@
   <meta charset="UTF-8" />
   <title>श्री रामकृष्ण गौ रक्षा सेवा समिति</title>
 
+  <!-- META -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-        content="श्री रामकृष्ण गौ रक्षा सेवा समिति असहाय, घायल एवं वृद्ध गायों के संरक्षण, सेवा एवं आजीवन देखभाल के लिए समर्पित एक सामाजिक संस्था है।" />
+        content="श्री रामकृष्ण गौ रक्षा सेवा समिति – गौ सेवा, संरक्षण और सामाजिक कल्याण के लिए समर्पित संस्था।" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -25,6 +28,7 @@
 <header class="site-header">
   <div class="container header-inner">
 
+    <!-- BRAND -->
     <a href="index.html" class="brand">
       <div class="brand-mark">ॐ</div>
       <div class="brand-text">
@@ -33,8 +37,12 @@
       </div>
     </a>
 
-    <button class="menu-toggle" type="button" aria-label="Toggle Menu">☰</button>
+    <!-- HAMBURGER -->
+    <button class="menu-toggle" type="button" aria-label="Toggle Menu">
+      ☰
+    </button>
 
+    <!-- NAV GROUP -->
     <div class="nav-group">
       <nav class="site-nav">
         <a href="index.html" data-i18n="nav_home"></a>
@@ -53,155 +61,95 @@
     </div>
 
   </div>
-
 </header>
 
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-inner">
 
+    <div class="hero-content">
+      <h1 data-i18n="hero_title"></h1>
+      <p data-i18n="hero_subtitle"></p>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero">
-    <div class="container hero-inner">
+      <div class="hero-actions">
+        <a href="donate.html" class="btn btn-primary" data-i18n="hero_donate"></a>
+        <a href="members.html" class="btn btn-outline" data-i18n="hero_member"></a>
+      </div>
+    </div>
 
-      <div class="hero-content">
-        <h1 data-i18n="hero_title"></h1>
-        <p data-i18n="hero_subtitle"></p>
+  </div>
+</section>
 
-        <div class="hero-actions">
-          <a href="donate.html" class="btn btn-primary" data-i18n="hero_cta_donate"></a>
-          <a href="members.html" class="btn btn-outline" data-i18n="hero_cta_join"></a>
+<!-- ================= ABOUT ================= -->
+<section class="section">
+  <div class="container">
+    <h2 data-i18n="home_about_title"></h2>
+    <p data-i18n="home_about_desc"></p>
+  </div>
+</section>
+
+<!-- ================= STORIES PREVIEW ================= -->
+<section class="section" style="background:#fff;">
+  <div class="container">
+    <h2 data-i18n="stories_heading"></h2>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="assets/images/story-1.jpg" alt="Gau Seva">
+        <div class="card-body">
+          <h3 data-i18n="story1_title"></h3>
+          <p data-i18n="story1_desc"></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/story-2.jpg" alt="Gau Raksha">
+        <div class="card-body">
+          <h3 data-i18n="story2_title"></h3>
+          <p data-i18n="story2_desc"></p>
         </div>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= ABOUT ================= -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-i18n="about_heading"></h2>
-      </div>
-
-      <p data-i18n="about_text_1"></p>
-      <p data-i18n="about_text_2"></p>
-      <p data-i18n="about_text_3"></p>
-
-    </div>
-  </section>
-
-  <!-- ================= GOALS ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-i18n="goals_heading"></h2>
-      </div>
-
-      <ul class="icon-list">
-        <li data-i18n="goal_1"></li>
-        <li data-i18n="goal_2"></li>
-        <li data-i18n="goal_3"></li>
-        <li data-i18n="goal_4"></li>
-        <li data-i18n="goal_5"></li>
-        <li data-i18n="goal_6"></li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!-- ================= VED DIVYANG PROJECT ================= -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-i18n="ved_project_heading"></h2>
-      </div>
-
-      <p data-i18n="ved_project_text"></p>
-      <p data-i18n="ved_project_text_2"></p>
-
-    </div>
-  </section>
-
-  <!-- ================= ACTIVITIES ================= -->
-  <section class="section" style="background:#fff;">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-i18n="activities_heading"></h2>
-      </div>
-
-      <ul class="icon-list">
-        <li data-i18n="activity_1"></li>
-        <li data-i18n="activity_2"></li>
-        <li data-i18n="activity_3"></li>
-        <li data-i18n="activity_4"></li>
-        <li data-i18n="activity_5"></li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!-- ================= STORIES ================= -->
-  <section class="section">
-    <div class="container">
-
-      <div class="section-title">
-        <h2 data-i18n="stories_heading"></h2>
-      </div>
-
-      <p data-i18n="story_placeholder"></p>
-
-    </div>
-  </section>
-<section class="section" id="youtube">
+<!-- ================= YOUTUBE ================= -->
+<section class="section">
   <div class="container">
-    <div class="section-title">
-      <h2 data-i18n="youtube_title">हमारा YouTube चैनल</h2>
-      <p data-i18n="youtube_desc">
-        गौ सेवा, गतिविधियाँ और वास्तविक कहानियाँ — हमारे वीडियो देखें
-      </p>
-    </div>
+    <h2 data-i18n="gau_video_title"></h2>
+    <p data-i18n="gau_video_desc"></p>
 
     <div class="youtube-wrapper">
       <iframe
-        src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-        title="YouTube video"
+        src="https://www.youtube.com/embed/8Y6hQfZ7xqM"
+        title="सनातन धर्म में गौ माता का महत्व"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
       </iframe>
-    </div>
-
-    <div class="youtube-cta">
-      <a href="https://www.youtube.com/@YOUR_CHANNEL_NAME"
-         target="_blank"
-         class="btn btn-primary">
-        YouTube चैनल देखें
-      </a>
     </div>
   </div>
 </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p data-i18n="footer_text"></p>
-    </div>
-  </footer>
-
-  <!-- ================= FLOATING ACTION BUTTONS ================= -->
-  <div class="fab call">
-    <a href="tel:+919519047327">📞</a>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p data-i18n="footer_text"></p>
   </div>
+</footer>
 
-  <div class="fab whatsapp">
-    <a href="https://wa.me/919519047327" target="_blank">💬</a>
-  </div>
+<!-- FLOATING BUTTONS -->
+<div class="fab call">
+  <a href="tel:+919519047327">📞</a>
+</div>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+<div class="fab whatsapp">
+  <a href="https://wa.me/919519047327" target="_blank">💬</a>
+</div>
+
+<!-- JS -->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
